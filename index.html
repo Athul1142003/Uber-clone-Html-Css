@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uber-clone</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/732/732135.png"
+      type="image/x-icon"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="head1">
+          <a href="" style="text-decoration: none; color: white" class="fs-5"
+            >Uber</a
+          >
+          <ul>
+            <li>Ride</li>
+            <li>Drive</li>
+            <li>Business</li>
+            <li>About <i class="fa-solid fa-angle-down"></i></li>
+          </ul>
+        </div>
+        <div class="head2">
+          <ul>
+            <span>
+              <!-- Language Selector -->
+              <div class="lang">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15 15 0 010 20a15 15 0 010-20z" />
+                </svg>
+                <span>EN</span>
+              </div>
+            </span>
+            <!-- <li>EN</li> -->
+            <li>Help</li>
+            <li>Log in</li>
+            <a href="" class="fw-bolder">sign up</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="section-1">
+      <h4 class="fw-bold">Ride</h4>
+      <ul>
+        <li>Request a ride</li>
+        <li>Reserve a ride</li>
+        <li>see prices</li>
+        <li>Expolore ride options</li>
+        <li>Airport rides</li>
+      </ul>
+    </section>
+    <section class="section-2">
+      <div class="section-2-first">
+        <h1>Request a ride for now or later</h1>
+        <p>
+          <i class="fa-solid fa-tag" style="color: green"></i>Up to 50% off your
+          first 5 Uber rides. T&Cs apply.* *Valid within 15 days of signup.
+        </p>
+        <input
+          type="text"
+          placeholder="Enter Location"
+          class="border rounded-2"
+          style="width: 350px; padding-left: 10px; height: 50px"
+        /><br /><br />
+        <input
+          type="text"
+          placeholder="Enter Destination"
+          class="border rounded-2"
+          style="width: 350px; padding-left: 10px; height: 50px"
+        /><br /><br />
+        <button class="btn btn-dark">See prices</button>
+        <button class="btn btn-outline-dark" style="margin-left: 10px">
+          Schedule for Later
+        </button>
+      </div>
+      <div class="section-2-image">
+        <img
+          src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=576/height=576/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy80MmEyOTE0Ny1lMDQzLTQyZjktODU0NC1lY2ZmZmUwNTMyZTkucG5n"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+    </section>
+    <section class="suggestions">
+      <h1 style="margin-left: 400px">Suggestions</h1>
+      <div class="suggestion-container">
+        <div id="first-container" class="suggestions-cards">
+          <div class="card-content">
+            <h4>Ride</h4>
+            <p>Go anywhere with Uber.Request a ride,hop in,and go</p>
+            <button>Details</button>
+          </div>
+          <div class="card-image">
+            <img
+              src="https://mobile-content.uber.com/launch-experience/top_bar_rides_3d.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="second-container" class="suggestions-cards">
+          <div class="card-content">
+            <h4>Reserve</h4>
+            <p>
+              Reserve your ride in advannce so you can relax on the day of your
+              trip.
+            </p>
+            <button>Details</button>
+          </div>
+          <div class="card-image">
+            <img
+              class="w-75"
+              src="https://mobile-content.uber.com/uber_reserve/reserve_clock.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="third-container" class="suggestions-cards">
+          <div class="card-content">
+            <h4>Rentals</h4>
+            <p>Request a trip for a block of time and make multiple stops.</p>
+            <button>Details</button>
+          </div>
+          <div class="card-image">
+            <img
+              class="w-75"
+              src="https://mobile-content.uber.com/launch-experience/Hourly2021.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="fourth-container" class="suggestions-cards">
+          <div class="card-content">
+            <h4>Intercity</h4>
+            <p>Get convenient, affordable outstaion cabs anytimr at your...</p>
+            <button>Details</button>
+          </div>
+          <div class="card-image">
+            <img
+              class="w-75"
+              src="https://mobile-content.uber.com/launch-experience/Hourly2021.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plan">
+      <h1>Plan for Later</h1>
+      <div class="main-container-plan">
+        <div class="plan-conatiner">
+          <div style="margin-top: 100px" class="plan-image">
+            <h2 style="position: relative; left: 50px">
+              Get your ride right with Uber Reserve
+            </h2>
+            <br /><br />
+            <p style="font-weight: 600; position: relative; left: 50px">
+              Choose date and time
+            </p>
+            <br />
+            <label for="date" class="mb-1 ms-4">Date</label>
+            <label for="time" class="ps-5" style="margin-left: 69px"
+              >Time:</label
+            ><br />
+            <input class="mb-4 ms-4" type="date" id="date" /><input
+              class="ms-3"
+              type="time"
+              id="time"
+            />
+            <button
+              style="
+                width: 200px;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+                margin-left: 40px;
+                margin-bottom: 10px;
+              "
+            >
+              Next
+            </button>
+          </div>
+          <img
+            class="img-fluid w-25 h-100"
+            src="assets/5152cc71-a5b0-4fbd-aeb8-bee896efcd48-removebg-preview.png"
+            alt=""
+          />
+        </div>
+        <div class="benfits-list">
+          <h3>Benefits</h3>
+          <ul style="list-style: none; line-height: 30px">
+            <li>
+              <i class="fa-solid fa-calendar"></i> Choose your exact pickup time
+              up to 90 days in advance.
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>Extra wait time included to meet
+              your ride.
+            </li>
+            <li>
+              <i class="fa-solid fa-suitcase"></i>Cancel at no charge up to 60
+              minutes in advance
+            </li>
+          </ul>
+          <p style="font-weight: lighter; text-decoration: dotted underline">
+            See Terms
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="plan-2">
+      <div class="plan-2-image">
+        <img
+          src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=576/height=324/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9mNzdhYTM4MC1hMzc4LTQ3YmYtOGI4OC1hYWJhMTU4N2VmZGQucG5n"
+          alt=""
+        />
+      </div>
+      <div class="plan-2-contents" style="width: 29%">
+        <h1 class="mb-5">
+          Ride with friends <br />
+          <span>seamlessly</span>
+        </h1>
+        <p>
+          Riding with friends just got easier: set up a group ride in the Uber
+          app, invite your friends, and arrive at your destination. Friends who
+          ride together save together.
+        </p>
+        <a href="" style="color: black; font-weight: lighter">Learn More</a>
+      </div>
+    </section>
+    <section class="uber-app-help">
+      <h1>Use the Uber app to help you travel your way</h1>
+      <div class="uber-app-cards">
+        <div class="card" style="width: 25rem">
+          <img
+            src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=384/height=384/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy81NGY2MDE2MS1jZjZiLTQ0MDEtYTMwOS04YmIxOTZjMDAxNGMuanBn"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Ride options</h5>
+            <p class="card-text">
+              There’s more than one way to move with Uber, no matter where you
+              are or where you’re headed next.
+            </p>
+            <a href="#" class="btn btn-dark">Search ride options</a>
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img
+            src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=384/height=384/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9mOWJhMjdjNC02NjVjLTRjY2EtODE2MS05ZTNmODdmNDk5OTQucG5n"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">700+ airports</h5>
+            <p class="card-text">
+              You can request a ride to and from most major airports.
+              <span style="text-decoration: underline">Schedule</span> a ride to
+              the airport for one less thing to worry about..
+            </p>
+            <a href="#" class="btn btn-dark">Search airports</a>
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img
+            src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=384/height=384/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9iOGMzOWRlMC02ZTEzLTQ4NWItYmE0NS02NjUxMTE3MGM2MmEuanBn"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">15,000+ cities</h5>
+            <p class="card-text">
+              The app is available in thousands of cities worldwide, so you can
+              request a ride even when you’re far from home.
+            </p>
+            <a href="#" class="btn btn-dark">Search cities</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="looking-business" style="background-color: black">
+      <div
+        class="looking-business-content"
+        style="width: 29%; position: relative; bottom: 45px"
+      >
+        <h1
+          class="text-light"
+          style="padding-bottom: 10px; margin-bottom: 10px; padding-top: -20px"
+        >
+          Looking for business solutions?
+        </h1>
+        <p class="text-light">
+          Get inormation about how companies leverage
+          <span style="text-decoration: underline">Uber for Business: </span>
+        </p>
+        <ul
+          class="text-light"
+          style="text-decoration: underline; line-height: 40px"
+        >
+          <li>Business travel</li>
+          <li>Courtesy rides</li>
+          <li>Meal programs</li>
+          <li>Item delivery</li>
+        </ul>
+        <button class="btn rounded-2 btn-light">Get Started</button>
+        <a href="" style="display: inline" class="text-light ms-3 p-2"
+          >Check for solutions</a
+        >
+      </div>
+      <img
+        class="p-5 mt-3"
+        src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=576/height=324/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9kNjQ4ZjViNi1iYjVmLTQ1MGUtODczMy05MGFlZmVjYmQwOWUuanBn"
+        alt=""
+      />
+    </section>
+    <section class="asked-questions">
+      <h1>Frequently asked questions</h1>
+      <ul class="list-group list-group-flush" style="margin-right: 50px">
+        <li class="list-group-item">
+          Can I have a lost item delivered to me?
+          <span
+            ><i class="fa-solid fa-angle-down" style="float: right"></i
+          ></span>
+        </li>
+        <li class="list-group-item">
+          Can I rent a car using Uber?<span
+            ><i class="fa-solid fa-angle-down" style="float: right"></i
+          ></span>
+        </li>
+        <li class="list-group-item">
+          Can I request a ride that picks up friends in different
+          locations?<span
+            ><i class="fa-solid fa-angle-down" style="float: right"></i
+          ></span>
+        </li>
+        <li class="list-group-item">
+          Can I request a taxi on Uber?<span
+            ><i class="fa-solid fa-angle-down" style="float: right"></i
+          ></span>
+        </li>
+        <li class="list-group-item">
+          Is there an Uber ride option for 5 people?<i
+            class="fa-solid fa-angle-down"
+            style="float: right"
+          ></i>
+        </li>
+      </ul>
+    </section>
+    <section class="do-more">
+      <h1 style="margin-left: 350px; padding-top: 30px; padding-bottom: 40px">
+        Do more in the app
+      </h1>
+      <div class="do-more-container">
+        <div class="do-more1">
+          <img
+            class="w-25 p-3"
+            src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=1152/height=1152/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9hNTk5ODZhZC0wZDlmLTQzOTYtODUzOS0zODliY2U5N2Y1NzkucG5n"
+            alt=""
+          />
+          <div class="do-more-1-contents">
+            <h2>Download the uber app</h2>
+            <p>Scan to Download</p>
+          </div>
+          <div class="do-more-1-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="do-more2">
+          <img
+            class="w-25 p-3"
+            src="https://tb-static.uber.com/prod/udam-assets/e24f1914-1e23-4896-ad77-22e88c37c2f9.svg"
+            alt=""
+          />
+          <div class="do-more-1-contents">
+            <h2>Sign up to ride</h2>
+            <p>Scan to Download</p>
+          </div>
+          <div class="do-more-1-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="end-para" style="margin-left: 170px;margin-top: 100px;margin-right: 350px;font-size:15px;margin-bottom: 200px;">
+      <p>
+        <span
+          >*Join the millions of riders who trust Uber for their everyday travel
+          needs. Get doorstep pickup and dropoff to your chosen destination at
+          the tap of a button. Select from a wide range of affordable options,
+          such as Uber Auto, Uber Moto, and Cabs.</span
+        ><br /><br />
+        <span
+          >Limited-period offer- Discount on first 5 trips (cab or moto)
+          completed within 15 days of signing up. The offer is valid only for
+          first-time users only. The promotion shall apply automatically to
+          eligible rides. Download the Uber app now to request your
+          first ride.</span
+        ><br /><br />
+        <span
+          >Discounts applicable - (i) For cab rides- 25% discount (maximum
+          discount of INR 75 per ride) (ii) For moto rides- 50% discount
+          (maximum discount of INR 50 per ride)</span
+        >
+        <span>This offer cannot be combined with any other offers or promo codes.</span>
+        <br><br>
+        <span>The offer is non-transferrable and limited to one per user/account.</span><br><br>
+        <span>Uber reserves the right to alter, suspend or withdraw the promotion offer in the future in its sole discretion without any prior notice. Terms and conditions apply.</span>
+        <br><br><br><br><br><span>Certain requirements and features vary by country, region, and city.</span>
+    </p>
+    </section>
+    <footer class="uber-footer">
+  <div class="container">
+    <!-- Top Section -->
+    <div class="footer-top">
+      <div class="footer-logo">
+        <h3>Uber</h3>
+        <a href="#">Visit Help Center</a>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="#">About us</a>
+          <a href="#">Our offerings</a>
+          <a href="#">Newsroom</a>
+          <a href="#">Investors</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Products</h5>
+          <a href="#">Ride</a>
+          <a href="#">Drive</a>
+          <a href="#">Eat</a>
+          <a href="#">Uber for Business</a>
+          <a href="#">Uber Freight</a>
+          <a href="#">Gift cards</a>
+          <a href="#">Uber Health</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Global citizenship</h5>
+          <a href="#">Safety</a>
+          <a href="#">Sustainability</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Travel</h5>
+          <a href="#">Reserve</a>
+          <a href="#">Airports</a>
+          <a href="#">Cities</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="footer-socials">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-x-twitter"></i>
+      </div>
+
+      <div class="footer-apps">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+      </div>
+
+      <div class="footer-lang-loc">
+        <div class="lang"><i class="fa-solid fa-globe"></i> English</div>
+        <div class="loc"><i class="fa-solid fa-location-dot"></i> Thiruvananthapuram</div>
+      </div>
+    </div>
+  </div>
+  <p style="position: relative;top: 50px; text-align: center;">&copy; Designed by -- &reg;Athul Ganesh</p>
+</footer>
+
+  </body>
+</html>
