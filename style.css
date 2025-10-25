@@ -345,3 +345,32 @@ nav{
     gap: 30px;
   }
 }
+.asked-questions-list a{
+  color: black;
+  font-weight: lighter;
+  margin-left: 30px;
+  position: relative;
+  bottom: 10px;
+  text-underline-offset: 7px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: black; /* or your color */
+  color: white;
+  z-index: 1000; /* keeps it above all content */
+  padding: 20px 40px;
+}
+.section-1 a{
+  color: black;
+  font-weight: lighter;
+  text-decoration: none;
+}
+.section-1 a:hover{
+  color: #000000;
+  font-weight: 400;
+
+}
